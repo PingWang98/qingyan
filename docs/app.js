@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const progressBar = document.getElementById('progress-bar');
 
-  // 1. View Tabs Switcher (二创人物志 vs 图文剧情)
+  // 1. View Tabs Switcher (图文剧情 vs 二创人物志 vs 方法论)
   const tabBtns = document.querySelectorAll('[data-view-target]');
   const views = document.querySelectorAll('.view-section');
 
@@ -14,11 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
       views.forEach(v => {
         v.classList.toggle('active', v.id === targetId);
       });
-      window.scrollTo({ top: document.querySelector('.hero').offsetHeight - 60, behavior: 'smooth' });
+      const heroEl = document.querySelector('.hero');
+      const navOffset = window.innerWidth <= 640 ? 52 : 58;
+      window.scrollTo({ top: Math.max(0, heroEl.offsetHeight - navOffset), behavior: 'smooth' });
     });
   });
 
-  // 2. Scroll Progress & Active Chapter Spy
+  // 2. Scroll Progress & Active Chapter Spy (with Mobile Horizontal TOC Auto-Scroll)
+  let lastActiveLink = null;
   window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -40,7 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     tocLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+      const isActive = link.getAttribute('href') === `#${currentId}`;
+      link.classList.toggle('active', isActive);
+      if (isActive && link !== lastActiveLink) {
+        lastActiveLink = link;
+        const sidebar = link.closest('.toc-sidebar');
+        if (sidebar && window.innerWidth <= 960) {
+          const linkLeft = link.offsetLeft - sidebar.offsetWidth / 2 + link.offsetWidth / 2;
+          sidebar.scrollTo({ left: Math.max(0, linkLeft), behavior: 'smooth' });
+        }
+      }
     });
   }, { passive: true });
 
@@ -52,5 +64,34 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
       document.body.style.fontSize = btn.getAttribute('data-size');
     });
+  });
+
+  // 4. Tap-to-Zoom Lightbox for Mobile & Desktop Stills
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox-overlay';
+  lightbox.innerHTML = `
+    <button class="lightbox-close" aria-label="关闭">&times;</button>
+    <img src="" alt="" />
+    <div class="lightbox-caption"></div>
+  `;
+  document.body.appendChild(lightbox);
+
+  const lbImg = lightbox.querySelector('img');
+  const lbCap = lightbox.querySelector('.lightbox-caption');
+
+  document.querySelectorAll('.still-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const img = card.querySelector('img');
+      const cap = card.querySelector('.still-caption');
+      if (!img) return;
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCap.innerHTML = cap ? cap.innerHTML : '';
+      lightbox.classList.add('open');
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('open');
   });
 });
