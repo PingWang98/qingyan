@@ -1,0 +1,8 @@
+﻿# Large raw image archives & intermediate outputs
+原始生成文件/
+幻梦_全部图片含中间产物_2026-11-04/
+项目图片/
+*.zip
+__pycache__/
+.DS_Store
+Thumbs.db
