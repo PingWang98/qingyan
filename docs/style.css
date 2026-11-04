@@ -333,32 +333,85 @@ body.theme-light .hero::after {
   border-top: 1px solid var(--border-subtle);
 }
 
-/* View Switcher in Top Nav & Hero */
+/* View Switcher in Top Nav & Hero (Prominent Pill Dock) */
 .view-tabs {
-  display: flex;
-  gap: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  background: rgba(15, 19, 28, 0.92);
+  border: 1.5px solid rgba(219, 161, 89, 0.45);
+  border-radius: 999px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.55), 0 0 18px rgba(219, 161, 89, 0.14);
 }
 .tab-btn {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-  padding: 6px 16px;
-  border-radius: 4px;
-  font-size: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(219, 161, 89, 0.22);
+  color: var(--text-bright);
+  padding: 9px 22px;
+  border-radius: 999px;
+  font-size: 15px;
   font-family: var(--font-serif);
+  font-weight: 600;
   letter-spacing: 0.08em;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.tab-btn .tab-badge {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(219, 161, 89, 0.18);
+  color: var(--gold-warm);
+  letter-spacing: 0.04em;
 }
 .tab-btn:hover {
-  color: var(--text-bright);
-  border-color: rgba(219, 161, 89, 0.4);
+  color: #fff;
+  background: rgba(219, 161, 89, 0.16);
+  border-color: var(--gold-warm);
+  transform: translateY(-1px);
 }
 .tab-btn.active {
-  color: var(--bg-deep);
-  background: var(--gold-warm);
-  border-color: var(--gold-warm);
-  font-weight: 600;
+  color: #090b10;
+  background: linear-gradient(135deg, #f0be78 0%, #d49244 100%);
+  border-color: #f3c686;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(219, 161, 89, 0.45);
+}
+.tab-btn.active .tab-badge {
+  background: rgba(9, 11, 16, 0.22);
+  color: #090b10;
+}
+.hero-switcher-wrap {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.hero-switcher-label {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  letter-spacing: 0.22em;
+  color: var(--gold-warm);
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+.hero-switcher-wrap .view-tabs {
+  padding: 8px;
+  gap: 12px;
+  border-width: 2px;
+  border-color: rgba(219, 161, 89, 0.65);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.7), 0 0 28px rgba(219, 161, 89, 0.24);
+}
+.hero-switcher-wrap .tab-btn {
+  padding: 12px 28px;
+  font-size: 16.5px;
 }
 
 /* Story Layout (Wider Manuscript for Tiled Cinema Stills) */

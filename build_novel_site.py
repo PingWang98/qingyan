@@ -83,14 +83,15 @@ story_html = f"""
         ("s01_v3_cropped", "S01", "木格糊纸隔扇占满视野，左扇女子拔簪欲刺，右扇文士摇扇对坐"),
         ("s01t_v3", "S01T", "镜头向右下平稳后拉，右扇死者伏案、左扇齐潇湘独立自语，右前景带出暗处季寒衣侧影")
     ])}
-    <p class="quote-highlight"><em>“曾经的齐潇湘确实心地善良，柔韧坚强……”</em></p>
+    <p class="quote-highlight"><strong>齐潇湘（画外音）：</strong><em>“曾经的齐潇湘确实心地善良，柔韧坚强……”</em></p>
     <p>镜头缓缓拉远，这一侧未点灯的冷暗舱房里，季寒衣正背对隔扇独立窗前。她穿着葱白短衫与鹅黄罗裙，黑亮的长发披散在肩头，与那场刺杀仅隔一层薄纸，却连头也没有回一下。江风吹入窗棂，拂起她颊边的黑发，将光阴吹回了很久以前的一个清晨。</p>
 
     <h3 class="story-sec-title">二、藏进袖筒的桂花糕</h3>
     <p>金黄的榆钱随晨风飘过农家小院，大榆树下的方桌旁，一家四口正围坐着吃早饭。母亲温柔地侧过身，替年幼的她擦去嘴角的饭粒。</p>
     <p>桌沿底下，十二三岁的二哥悄悄探出手，塞给她一块桂花糕，又冲她挤挤眼，竖起食指抵在唇边比了个“嘘”。小姑娘欢喜地攥紧点心，小声叫了一句：</p>
     <p class="quote-highlight"><strong>“……二哥。”</strong></p>
-    <p>她舍不得立刻吃，小心翼翼地把桂花糕缩进袖筒深处藏好。而那个隔着时空的声音，恰好在此刻轻轻落下后半句：<em>“很可怜，也很值得怜惜……”</em></p>
+    <p>她舍不得立刻吃，小心翼翼地把桂花糕缩进袖筒深处藏好。而隔扇后齐潇湘平静的画外音，恰好在此刻轻轻落下第二句判词：</p>
+    <p class="quote-highlight"><strong>齐潇湘（画外音）：</strong><em>“很可怜，也很值得怜惜……”</em></p>
     {grid(1, [
         ("s02_v1", "S02", "二哥在桌下偷偷递来桂花糕，竖起食指抵唇比“嘘”")
     ])}
@@ -115,7 +116,7 @@ story_html = f"""
   <span class="chapter-num">ACT 02 · CHAPTER TWO</span>
   <h2 class="chapter-title">第二章：歧路（阴影里的孤狼与阳光下的天骄）</h2>
   <div class="chapter-prose">
-    <p class="quote-highlight"><em>“可惜，这世上的路，从来不是人人都能自己选的。”</em></p>
+    <p class="quote-highlight"><strong>齐潇湘（画外音）：</strong><em>“可惜，这世上的路，从来不是人人都能自己选的。”</em></p>
     <p>在绝圣道的幽暗石室里，年少的季寒衣猛然攥紧了骨节泛白的拳头。从这一刻起，两段截然不同的人生在两个世界里平行展开——她们同样年少成名，同样在十六七岁踏入宗师之境，却一个在冷雨黑石与血火算计里独行，一个在晴空花树与同门师长的护佑下长大。</p>
 
     <h3 class="story-sec-title">一、行 · 孤山冷雨 vs 晴空同门（大远景）</h3>
@@ -171,10 +172,11 @@ story_html = f"""
   <span class="chapter-num">ACT 03 · CHAPTER THREE</span>
   <h2 class="chapter-title">第三章：城余巷的夏夜（她又做回了一次妹妹）</h2>
   <div class="chapter-prose">
-    <p class="quote-highlight"><em>她本是为复仇而来，将一座小院变成棋盘。可在这场由她亲手编织的假戏里，她却替自己偷来了一段有哥哥、有家、有人哄着讲故事的夏天。</em></p>
+    <p class="quote-highlight"><strong>齐潇湘（画外音）：</strong><em>“有时候，假的东西，倒比真的更容易让人相信。”</em></p>
+    <p>伴随楼船隔扇后齐潇湘平静疏离的画外音，画面从绝圣道石殿檐下那双幽冷孤傲的眼眸刺入——在夕阳映照的瞬间，化作了定江府破庙里一双弯如月牙、盛满狡黠笑意的眼睛。</p>
+    <p>为了算计师父严长青、夺取神物，季寒衣收敛全身骨骼化名“丁轻烟”，与下属齐潇湘（假娘亲刘玉藻）、邱辰（假爹爹丁胜意）在城余巷布下了一座虚假的“丁家”。可在这场由她亲手编织的假戏里，她却替自己偷来了一段有哥哥、有家、有人哄着讲故事的夏天。</p>
 
     <h3 class="story-sec-title">一、破庙斜阳 · 重逢般的第一声“二哥”</h3>
-    <p>绝圣道石殿檐下那双幽冷孤傲的眼眸，在斜阳刺入眼瞳的瞬间，化作了破庙里一双弯如月牙、盛满狡黠笑意的眼睛。</p>
     <p>刚从昏迷中醒来的书生丁松言迷茫地睁开眼，面前蹲着一个穿葱白短衫、鹅黄罗裙、梳着乖巧双螺髻的小姑娘。她歪着头笑吟吟地问他：“醒了？”见书生一脸怔忡，她眼里的灿烂笑意顺势敛成恰到好处的委屈与失落，伸手一把揪住他的袖口，熟稔地往门外温暖的夕阳里一拽：</p>
     <p class="quote-highlight"><strong>“……二哥，你不记得我了？”</strong></p>
     {grid(2, [
@@ -217,7 +219,7 @@ story_html = f"""
   <span class="chapter-num">ACT 04 · CHAPTER FOUR</span>
   <h2 class="chapter-title">第四章：暗流与选择（真伤演假哭 · 悬停半寸的手）</h2>
   <div class="chapter-prose">
-    <p class="quote-highlight"><em>“有时候，假的东西，倒比真的更容易让人相信。”</em></p>
+    <p class="quote-highlight"><strong>齐潇湘（画外音）：</strong><em>“……但在魔窟时，她就已经死了，如今活着的不过是一个……擅于利用他人怜悯的恶鬼。”</em></p>
 
     <h3 class="story-sec-title">一、织网 · 铁门入瓮与篦箱密信</h3>
     <p>铜镜里的笑意还未散尽，白昼森严的阴影已悄然合拢。丁松言怀抱一摞话本被引入高耸的甄府铁门，沉重的黑门在他身后缓缓关死。而在城余巷的灯下，替二哥安静誊抄话本的丁轻烟趁无人注意，指尖一滑，将一张折好的密信悄无声息地塞进了“娘亲”刘玉藻的篦箱暗格。扑火的飞蛾撞上灯罩，油灯“啪”地一声被吹熄。</p>
@@ -616,9 +618,9 @@ html = f"""<!DOCTYPE html>
       <span>丁轻烟 · 季寒衣</span>
     </div>
     <div class="view-tabs">
-      <button class="tab-btn active" data-view-target="view-novel">二创人物志</button>
-      <button class="tab-btn" data-view-target="view-story">图文剧情</button>
-      <button class="tab-btn" data-view-target="view-method">方法论 · 转场</button>
+      <button class="tab-btn active" data-view-target="view-story"><span class="tab-badge">01</span>图文分镜剧情</button>
+      <button class="tab-btn" data-view-target="view-novel"><span class="tab-badge">02</span>二创人物志</button>
+      <button class="tab-btn" data-view-target="view-method"><span class="tab-badge">03</span>方法论 · 转场</button>
     </div>
     <div class="controls">
       <button class="ctrl-btn" data-size="16px">小</button>
@@ -634,30 +636,18 @@ html = f"""<!DOCTYPE html>
     <div class="hero-epigraph">
       一个早已失去家的人，偏偏又做了一场有家的梦。
     </div>
-    <div class="view-tabs" style="margin-top: 36px;">
-      <button class="tab-btn active" data-view-target="view-novel">阅读 · 二创人物志</button>
-      <button class="tab-btn" data-view-target="view-story">赏析 · 图文分镜剧情</button>
-      <button class="tab-btn" data-view-target="view-method">精研 · 影视转场方法论</button>
+    <div class="hero-switcher-wrap">
+      <div class="hero-switcher-label">▼ 点击下方栏位切换浏览模式 ▼</div>
+      <div class="view-tabs">
+        <button class="tab-btn active" data-view-target="view-story"><span class="tab-badge">默认主视图</span>赏析 · 图文分镜剧情（45帧）</button>
+        <button class="tab-btn" data-view-target="view-novel"><span class="tab-badge">长文原稿</span>阅读 · 二创人物志</button>
+        <button class="tab-btn" data-view-target="view-method"><span class="tab-badge">工程体系</span>精研 · 影视转场方法论</button>
+      </div>
     </div>
   </section>
 
-  <!-- 视图一：二创人物志（纯文字长卷） -->
-  <div id="view-novel" class="view-section active">
-    <main class="layout">
-      <aside class="toc-sidebar">
-        <div class="toc-header">人物志目录 · MONOGRAPH</div>
-        <ul class="toc-list">
-          {toc_html}
-        </ul>
-      </aside>
-      <section class="manuscript">
-        {"".join(chapters_html)}
-      </section>
-    </main>
-  </div>
-
-  <!-- 视图二：图文剧情（五幕故事 + 44张高清剧照全平铺） -->
-  <div id="view-story" class="view-section">
+  <!-- 视图一（默认激活）：图文剧情（五幕故事 + 45张高清剧照全平铺） -->
+  <div id="view-story" class="view-section active">
     <main class="layout story-layout">
       <aside class="toc-sidebar">
         <div class="toc-header">五幕剧情 · STORYBOARD</div>
@@ -667,6 +657,21 @@ html = f"""<!DOCTYPE html>
       </aside>
       <section class="manuscript">
         {story_html}
+      </section>
+    </main>
+  </div>
+
+  <!-- 视图二：二创人物志（纯文字长卷） -->
+  <div id="view-novel" class="view-section">
+    <main class="layout">
+      <aside class="toc-sidebar">
+        <div class="toc-header">人物志目录 · MONOGRAPH</div>
+        <ul class="toc-list">
+          {toc_html}
+        </ul>
+      </aside>
+      <section class="manuscript">
+        {"".join(chapters_html)}
       </section>
     </main>
   </div>
@@ -696,4 +701,7 @@ html = f"""<!DOCTYPE html>
 """
 
 out_path.write_text(html, encoding="utf-8")
-print(f"Generated {out_path} ({len(html)} bytes).")
+docs_out = Path(r"d:\AImovie\qingyan\docs\index.html")
+if docs_out.parent.exists():
+    docs_out.write_text(html, encoding="utf-8")
+print(f"Generated {out_path} and {docs_out} ({len(html)} bytes).")
